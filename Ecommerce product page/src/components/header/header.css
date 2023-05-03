@@ -14,6 +14,10 @@
     justify-content: space-between;
 }
 
+.tab-C ul{
+    flex-direction: row;
+}
+
 li{
     cursor: pointer;
     margin: 0 0.2rem;
