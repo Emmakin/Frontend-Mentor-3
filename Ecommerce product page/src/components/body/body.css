@@ -1,0 +1,18 @@
+.wrapperb{
+    display: flex;
+    margin: 2rem;
+}
+
+
+.wrap-P{
+    padding: 4rem;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+
+}
+.wrapper ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
