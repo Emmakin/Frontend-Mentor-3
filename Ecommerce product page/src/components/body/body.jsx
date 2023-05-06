@@ -1,4 +1,5 @@
 import React from 'react'
+import Cart from '../image/icon-cart.svg'
 import './body.css'
 import Picture1 from '../image/image-product-1.jpg'
 import Thumbnail1 from '../image/image-product-1-thumbnail.jpg'
@@ -18,7 +19,7 @@ function Body() {
                 <li><img src={Thumbnail4} alt= "The thumbnail for the backview of the pic" /></li>
             </ul>
         </div>
-        <div>
+        <div className='textW'>
           <span>SNEAKER COMPANY</span>
           <h1>Fall Limited Edition Sneakers</h1>
           <span>
@@ -26,13 +27,22 @@ function Body() {
               companion. Featuring a durable rubber outer sole, they'll <br />
               withsand everything the weather can offer.
           </span>
-          <span>$125.00</span><label>50%</label>
+          <div>
+            <span>$125.00</span>
+            <label>50%</label>
+          </div>
           <span>$250.00</span>
           <div>
             <span>
               <button>-</button>
-              <label></label>
+              <label>Number</label>
               <button>+</button>
+            </span>
+            <span>
+              <button>
+                <img src={Cart}/> 
+                <span>Add to cart</span>
+              </button>
             </span>
           </div>
         </div>
