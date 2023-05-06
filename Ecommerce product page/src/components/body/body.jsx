@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Cart from '../image/icon-cart2.svg'
 import './body.css'
 import Picture1 from '../image/image-product-1.jpg'
@@ -7,7 +7,14 @@ import Thumbnail2 from '../image/image-product-2-thumbnail.jpg'
 import Thumbnail3 from '../image/image-product-3-thumbnail.jpg'
 import Thumbnail4 from '../image/image-product-4-thumbnail.jpg'
 
+
+
+
+
+
 function Body() {
+  const [count, setCount] = useState(0);
+
   return (
     <div className='wrapperB'>
         <div className="wrap-P">
@@ -34,9 +41,19 @@ function Body() {
           <span className='oldPrice'>$250.00</span>
           <div className='lastButtons'>
             <span className='numB'>
-              <button>-</button>
-              <label>Number</label>
-              <button>+</button>
+              <button onClick={()=> {
+                if (count <= 0) {
+                  count = 0
+                }
+                setCount(count - 1)
+                }}>-
+              </button>
+              <label>{count}</label>
+              <button 
+                onClick={()=>{
+                  setCount(count + 1)}}
+                >+
+              </button>
             </span>
             <span className='addToCart'>
               <button>
