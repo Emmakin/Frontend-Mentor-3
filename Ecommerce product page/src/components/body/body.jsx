@@ -9,9 +9,9 @@ import Thumbnail4 from '../image/image-product-4-thumbnail.jpg'
 function Body() {
   return (
     <div className='wrapperB'>
-        <div wrap-P>
+        <div className="wrap-P">
             <img src={Picture1} alt="This a picture of a shoe"/>
-            <ul>
+            <ul className='thumbP'>
                 <li><img src={Thumbnail1} alt= "The thumbnail for the frontview of the pic" /></li>
                 <li><img src={Thumbnail2} alt= "The thumbnail for the rightview of the pic" /></li>
                 <li><img src={Thumbnail3} alt= "The thumbnail for the leftview of the pic" /></li>
