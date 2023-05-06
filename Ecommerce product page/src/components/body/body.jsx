@@ -26,6 +26,14 @@ function Body() {
               companion. Featuring a durable rubber outer sole, they'll <br />
               withsand everything the weather can offer.
           </span>
+          <span>$125.00</span><label>50%</label>
+          <span>$250.00</span>
+          <div>
+            <span>
+              <button>-</button>
+              <button>-</button>
+            </span>
+          </div>
         </div>
     </div>
   )
