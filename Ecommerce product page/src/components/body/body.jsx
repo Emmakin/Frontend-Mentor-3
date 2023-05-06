@@ -1,5 +1,5 @@
 import React from 'react'
-import Cart from '../image/icon-cart.svg'
+import Cart from '../image/icon-cart2.svg'
 import './body.css'
 import Picture1 from '../image/image-product-1.jpg'
 import Thumbnail1 from '../image/image-product-1-thumbnail.jpg'
@@ -27,11 +27,11 @@ function Body() {
               companion. Featuring a durable rubber outer sole, they'll <br />
               withsand everything the weather can offer.
           </span>
-          <div>
+          <div className='priceD'>
             <span><h3>$125.00</h3></span>
             <label>50%</label>
           </div>
-          <span>$250.00</span>
+          <span className='oldPrice'>$250.00</span>
           <div className='lastButtons'>
             <span className='numB'>
               <button>-</button>
@@ -40,7 +40,7 @@ function Body() {
             </span>
             <span className='addToCart'>
               <button>
-                <img src={Cart}/> 
+                <img src={Cart} alt='The icon of the cart'/> 
                 <span>Add to cart</span>
               </button>
             </span>
