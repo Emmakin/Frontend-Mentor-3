@@ -20,25 +20,25 @@ function Body() {
             </ul>
         </div>
         <div className='textW'>
-          <span>SNEAKER COMPANY</span>
-          <h1>Fall Limited Edition Sneakers</h1>
+          <span><h5>SNEAKER COMPANY</h5></span>
+          <h1><strong>Fall Limited Edition Sneakers</strong></h1>
           <span>
               These low-profile sneakers are your perfect casual wear <br />
               companion. Featuring a durable rubber outer sole, they'll <br />
               withsand everything the weather can offer.
           </span>
           <div>
-            <span>$125.00</span>
+            <span><h3>$125.00</h3></span>
             <label>50%</label>
           </div>
           <span>$250.00</span>
-          <div>
-            <span>
+          <div className='lastButtons'>
+            <span className='numB'>
               <button>-</button>
               <label>Number</label>
               <button>+</button>
             </span>
-            <span>
+            <span className='addToCart'>
               <button>
                 <img src={Cart}/> 
                 <span>Add to cart</span>

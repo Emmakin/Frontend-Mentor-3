@@ -6,9 +6,10 @@
 
 
 .wrap-P{
-    padding: 4rem 2rem;
+    margin: 0 6rem;
+    padding: 4rem 3rem;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     }
 
 .wrap-P img {
@@ -26,20 +27,58 @@
 }
 
 .thumbP li{
-    width: 3.5rem;
+    width: 5rem;
     padding: 0;
 }
 
+
 .textW{
-    padding: 4rem 2rem;
-    width: 50%;
+    padding: 8rem 3rem;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.lastButtons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 
 
 button{
     padding: 0.5rem;
     border-radius: 0.4rem;
+    cursor: pointer;
 }
+
+/* Texts */
+h6 {
+    color: hsl(26, 100%, 55%);
+}
+
+.lastButtons{
+    display: flex;
+
+}
+
+.numB, .addToCart {
+    width: 50%;
+}
+
+.addToCart button{
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+}
+
+.addToCart button:hover{
+    background-color: hsl(25, 100%, 94%);
+}
+
+.numB button{
+    color: hsl(26, 100%, 55%);
+}
+
+
