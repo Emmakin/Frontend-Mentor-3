@@ -18,7 +18,15 @@ function Body() {
                 <li><img src={Thumbnail4} alt= "The thumbnail for the backview of the pic" /></li>
             </ul>
         </div>
-        <div></div>
+        <div>
+          <span>SNEAKER COMPANY</span>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <span>
+              These low-profile sneakers are your perfect casual wear <br />
+              companion. Featuring a durable rubber outer sole, they'll <br />
+              withsand everything the weather can offer.
+          </span>
+        </div>
     </div>
   )
 }
