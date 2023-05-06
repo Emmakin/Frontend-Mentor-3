@@ -31,7 +31,8 @@ function Body() {
           <div>
             <span>
               <button>-</button>
-              <button>-</button>
+              <label></label>
+              <button>+</button>
             </span>
           </div>
         </div>
