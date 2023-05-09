@@ -7,7 +7,7 @@
     flex-direction: column;
     background-color: rgb(255, 0, 0);
     gap: 1.2rem;
-    width: 40rem;
+    width: 20rem;
 }
 
 
@@ -20,4 +20,12 @@
     width: 2rem;
     height: 2rem;
     border-radius: 0.2rem;
+}
+
+.cartT{
+    margin: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
 }
