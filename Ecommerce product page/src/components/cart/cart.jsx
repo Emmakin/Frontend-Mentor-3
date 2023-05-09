@@ -6,9 +6,10 @@ function  Cart() {
   return (
     <div className='cartWrapper'>
         <span>Cart</span>
-        <div>
+        <div className='cartB'>
             <img className="cartImg"src={Thumbnail1} />
             <div>
+                <span>Fall Limited Edition Sneakers</span>
                 <span>Fall Limited Edition Sneakers</span>
             </div>
         </div>
