@@ -5,7 +5,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 0, 0);
+    background-color: white;
     gap: 1.2rem;
     width: 20rem;
 }
@@ -28,4 +28,10 @@
     flex-direction: column;
     gap: 0.2rem;
 
+}
+
+.cartWrapper button{
+    color: white;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
 }
