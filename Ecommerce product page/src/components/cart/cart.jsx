@@ -8,7 +8,7 @@ function  Cart() {
         <span>Cart</span>
         <div className='cartB'>
             <img className="cartImg"src={Thumbnail1} />
-            <div>
+            <div className='cartT'>
                 <span>Fall Limited Edition Sneakers</span>
                 <span>Fall Limited Edition Sneakers</span>
             </div>

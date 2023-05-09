@@ -1,11 +1,15 @@
 .cartWrapper{
-    padding: 1rem;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     gap: 1.2rem;
-    width: 15rem;
+    width: 40rem;
 }
+
 
 .cartB{
     display: flex;
