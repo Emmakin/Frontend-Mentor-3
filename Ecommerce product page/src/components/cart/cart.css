@@ -8,6 +8,7 @@
     background-color: white;
     gap: 1.2rem;
     width: 20rem;
+    box-shadow: 0.4rem 1rem 1rem 0.4rem rgba(0, 0, 0, 0.027);
 }
 
 
