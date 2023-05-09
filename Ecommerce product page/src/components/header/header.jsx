@@ -1,7 +1,8 @@
 import {React,useState} from 'react'
 import Logo from '../image/logo.svg'
 import './header.css'
-import Cart from '../image/icon-cart.svg'
+import Cart from '../cart/cart'
+import CartI from '../image/icon-cart.svg'
 import Avatar from '../image/image-avatar.png'
 import Bar from '../image/icon-menu.svg'
 import Close from '../image/icon-close.svg'
@@ -9,6 +10,7 @@ import Close from '../image/icon-close.svg'
 
 function Header() {
   const [toggle, setToggle]= useState(false)
+  const [showCart, setshowCart] = useState(false);
 
   return (
     <div className='wrapper'>
@@ -32,7 +34,8 @@ function Header() {
         </ul>
       </div>
       <div className='headIcons'>
-        <img src={Cart} />
+        <img src={CartI} onClick={()=>{setshowCart(!showCart)}}/>
+        {showCart && <Cart />}
         <img className='imgP' src={Avatar} />
       </div>
     </div>

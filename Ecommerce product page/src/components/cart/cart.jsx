@@ -4,7 +4,7 @@ import Thumbnail1 from '../image/image-product-1-thumbnail.jpg'
 
 function  Cart() {
   return (
-    <div>
+    <div className='cartWrapper'>
         <span>Cart</span>
         <div>
             <img src={Thumbnail1} />
