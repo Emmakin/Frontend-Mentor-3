@@ -16,14 +16,24 @@ import Prev from '../image/icon-previous.svg'
 
 function Body() {
   const [count, setCount] = useState(0);
+  const [modal, setModal] = useState(0);
+
+  let imgs = [Picture1,Thumbnail2,Thumbnail3,Thumbnail1]
+
+
 
   return (
     <div className='wrapperB'>
         <div className="wrap-P">
-            <img src={Picture1} alt="This a picture of a shoe"/>
+            <img src={imgs[modal]} alt="This a picture of a shoe"/>
             <div className='modalW'>
-                <button className="left"><img src={Prev} alt="The picture of a left arrow"/></button>
-                <button className="right"><img src={Next} alt="The icon of a right arrow"/></button>
+                <button className="left" onClick={()=>{
+                  modal <= 0 ? setModal(3): setModal(modal-1)
+                }}><img src={Prev} alt="The picture of a left arrow"/></button>
+                <button className="right" 
+                onClick={()=>{
+                  modal >= imgs.length-1 ? setModal(0) : setModal(modal + 1)
+                }}><img src={Next} alt="The icon of a right arrow"/></button>
             </div>
            <ul className='thumbP'>
                 <li><img src={Thumbnail1} alt= "The thumbnail for the frontview of the pic" /></li>

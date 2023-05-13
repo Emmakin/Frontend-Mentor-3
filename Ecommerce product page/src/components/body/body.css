@@ -159,6 +159,24 @@ h5 {
     .modalW{
         position: absolute;
         display: flex;
+        width: 100%;
+        flex-direction: row;
+        top: 50%;
+        justify-content: space-between;
+    }
+
+    .modalW button{
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.195);
+    }
+
+    .modalW button:hover{
+        opacity: 2rem;
     }
 
     .textW{
