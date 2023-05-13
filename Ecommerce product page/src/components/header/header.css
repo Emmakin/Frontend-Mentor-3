@@ -58,29 +58,26 @@ li:hover{
         display: none;
     }
 
-    .respDiv{
+    .respDiv {
         position: absolute;
         display: block;
         flex-direction: column;
-        background-color:
-        linear-gradient( to right,
-        rgb(255, 255, 255) 0%,
-        rgb(255, 255, 255) 60%,
-        rgba(0, 0, 0, 0.7) 6%,
-        rgba(0, 0, 0, 0.7) 100%);;
+        background-color: white;
+        box-shadow: 0 0 25rem 0 rgba(0, 0, 0, 0.9);
         z-index: 4;
         top: 0rem;
         left: 0rem;
-        width: 100%;
-        height: 100%;
-        padding: 8rem 0 4rem 2rem;
+        width: 60%;
+        /* height: 100%; */
+        padding: 6rem 0 58rem 2rem;
+        transition: 0.5s;
+
     }
 
-
     .respDiv li{
-        margin: 2rem 0 0 0;
-        font-size: 2rem;
-        font: bold;
+        margin: 1rem 0 0 0;
+        font-size: 1rem;
+        font-weight: 700; 
     }
 
     .headIcons{

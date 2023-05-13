@@ -6,7 +6,8 @@ import Thumbnail1 from '../image/image-product-1-thumbnail.jpg'
 import Thumbnail2 from '../image/image-product-2-thumbnail.jpg'
 import Thumbnail3 from '../image/image-product-3-thumbnail.jpg'
 import Thumbnail4 from '../image/image-product-4-thumbnail.jpg'
-import ModalB from '../modalB/modalB'
+import Next from '../image/icon-next.svg'
+import Prev from '../image/icon-previous.svg'
 
 
 
@@ -20,7 +21,11 @@ function Body() {
     <div className='wrapperB'>
         <div className="wrap-P">
             <img src={Picture1} alt="This a picture of a shoe"/>
-            <ul className='thumbP'>
+            <div className='modalW'>
+                <button className="left"><img src={Prev} alt="The picture of a left arrow"/></button>
+                <button className="right"><img src={Next} alt="The icon of a right arrow"/></button>
+            </div>
+           <ul className='thumbP'>
                 <li><img src={Thumbnail1} alt= "The thumbnail for the frontview of the pic" /></li>
                 <li><img src={Thumbnail2} alt= "The thumbnail for the rightview of the pic" /></li>
                 <li><img src={Thumbnail3} alt= "The thumbnail for the leftview of the pic" /></li>
@@ -43,10 +48,7 @@ function Body() {
           <div className='lastButtons'>
             <span className='numB'>
               <button onClick={()=> {
-                if (count <= 0) {
-                  count = 0
-                }
-                setCount(count - 1)
+                 count === 0 ? setCount(count): setCount(count - 1)
                 }}>-
               </button>
               <label>{count}</label>
@@ -64,10 +66,6 @@ function Body() {
             </span>
           </div>
         </div>
-        {/* <div>
-          <ModalB />
-        </div> */}
-        
     </div>
   )
 }
