@@ -6,6 +6,7 @@ import Thumbnail1 from '../image/image-product-1-thumbnail.jpg'
 import Thumbnail2 from '../image/image-product-2-thumbnail.jpg'
 import Thumbnail3 from '../image/image-product-3-thumbnail.jpg'
 import Thumbnail4 from '../image/image-product-4-thumbnail.jpg'
+import ModalB from '../modalB/modalB'
 
 
 
@@ -30,8 +31,8 @@ function Body() {
           <span><h5>SNEAKER COMPANY</h5></span>
           <h1><strong>Fall Limited Edition Sneakers</strong></h1>
           <span>
-              These low-profile sneakers are your perfect casual wear <br />
-              companion. Featuring a durable rubber outer sole, they'll <br />
+              These low-profile sneakers are your perfect casual wear
+              companion. Featuring a durable rubber outer sole, they'll 
               withsand everything the weather can offer.
           </span>
           <div className='priceD'>
@@ -63,6 +64,10 @@ function Body() {
             </span>
           </div>
         </div>
+        {/* <div>
+          <ModalB />
+        </div> */}
+        
     </div>
   )
 }

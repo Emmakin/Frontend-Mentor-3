@@ -129,3 +129,47 @@ h5 {
 .addToCart button img {
     color: none;
 }
+
+
+@media (max-width: 375px) {
+    .wrapperB{
+        margin: 0rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap-P{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+    .wrap-P ul{
+        display: none;
+    }
+    .wrap-P img{
+        width: 100%;
+        border-radius: 0rem;
+    }
+
+    .textW{
+        margin: 2rem 0 2rem 0;
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .lastButtons{
+        display: flex;
+        flex-direction: column;
+    }
+    .numB, .numB button, .numB label{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+        border-radius: 0.4rem;
+        margin: 0 0 1rem 0;
+    }
+    .addToCart{
+        width: 100%;
+    }
+}
